@@ -1,0 +1,123 @@
+:root{
+  --bg:#0b0f14;
+  --card:#101722;
+  --grid:#0e1a28;
+  --text:#e6eef8;
+  --muted:#a7b3c6;
+  --brand:#5dd6ff;
+  --accent:#6effa7;
+  --warn:#ffb86b;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(93,214,255,.08), transparent 60%),
+    radial-gradient(1000px 500px at 10% -20%, rgba(110,255,167,.06), transparent 60%),
+    linear-gradient(180deg, rgba(13,16,23,1), rgba(9,12,18,1));
+  background-color:var(--bg);
+  line-height:1.7;
+}
+
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+.container.narrow{max-width:860px}
+
+.site-header{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter: blur(8px);
+  background:rgba(11,15,20,.55);
+  border-bottom:1px solid rgba(93,214,255,.15);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:.5px;color:var(--brand)}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
+.nav a:hover{color:var(--text)}
+
+.section{padding:72px 0;border-top:1px solid rgba(93,214,255,.08)}
+.hero{padding:96px 0 72px 0;position:relative}
+.hero:before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.25;
+  background-image:
+    linear-gradient(0deg, transparent 24px, rgba(93,214,255,.08) 25px),
+    linear-gradient(90deg, transparent 24px, rgba(93,214,255,.06) 25px);
+  background-size:25px 25px;
+  mask-image: radial-gradient(800px 400px at 50% 10%, black, transparent 80%);
+}
+
+h1{font-size:32px;margin:0 0 12px 0;letter-spacing:.3px}
+.lead{color:var(--muted);font-size:16px;margin:0 0 10px 0}
+.keywords{color:var(--accent);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+
+h2{font-size:22px;margin:0 0 16px 0}
+p{margin:0 0 12px 0}
+.list{margin:0;padding-left:18px}
+.list li{margin:8px 0}
+
+.case-tier{margin-bottom:48px}
+.tier-title{
+  font-size:24px;margin:0 0 8px 0;color:var(--brand);
+  position:relative;padding-left:20px;
+}
+.tier-title:before{
+  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:4px;height:24px;background:linear-gradient(180deg, var(--brand), var(--accent));
+  border-radius:2px;
+}
+.tier-desc{
+  color:var(--muted);font-size:14px;margin:0 0 20px 0;
+  padding-left:20px;
+}
+.accordion{display:flex;flex-direction:column;gap:16px;margin-top:24px}
+.card{
+  background:linear-gradient(180deg, rgba(16,23,34,1), rgba(11,15,20,1));
+  border:1px solid rgba(93,214,255,.15);
+  border-radius:14px;
+  box-shadow:0 12px 28px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.02);
+  overflow:hidden;
+}
+.card.placeholder{border-style:dashed;opacity:.85}
+
+.card-header{
+  width:100%;background:none;border:none;padding:18px;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;
+  text-align:left;color:var(--text);transition:background-color .15s ease;
+}
+.card-header:hover{background:rgba(93,214,255,.05)}
+.card-header h3{margin:0;font-size:18px;color:var(--brand)}
+.toggle-icon{
+  font-size:20px;font-weight:700;color:var(--accent);
+  transition:transform .2s ease;
+}
+.card.active .toggle-icon{transform:rotate(0deg)}
+.card:not(.active) .toggle-icon{transform:rotate(0deg)}
+
+.card-content{
+  padding:0 18px 18px 18px;overflow:hidden;
+  transition:max-height .3s ease, opacity .2s ease;
+}
+.card-content.collapsed{max-height:0;padding-top:0;padding-bottom:0;opacity:0}
+.card-content:not(.collapsed){max-height:500px;opacity:1}
+.card-content p{margin:8px 0}
+
+.site-footer{padding:40px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(93,214,255,.1)}
+
+.back-top{
+  position:fixed;right:18px;bottom:18px;z-index:9;
+  background:linear-gradient(180deg, var(--brand), #3fb3ff);
+  color:#00131a;border:none;border-radius:10px;padding:10px 12px;cursor:pointer;
+  box-shadow:0 8px 24px rgba(93,214,255,.25);
+  opacity:.85;transition:transform .15s ease, opacity .15s ease;
+}
+.back-top:hover{transform:translateY(-2px);opacity:1}
+
+@media (max-width: 720px){
+  .nav{display:none}
+  h1{font-size:26px}
+  h2{font-size:20px}
+}
+
+
