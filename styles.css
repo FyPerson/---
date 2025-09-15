@@ -100,7 +100,7 @@ p{margin:0 0 12px 0}
   transition:max-height .3s ease, opacity .2s ease;
 }
 .card-content.collapsed{max-height:0;padding-top:0;padding-bottom:0;opacity:0}
-.card-content:not(.collapsed){max-height:800px;opacity:1}
+.card-content:not(.collapsed){max-height:none;opacity:1;overflow-y:visible}
 .card-content p{margin:8px 0}
 
 .architecture-diagram{
@@ -117,6 +117,64 @@ p{margin:0 0 12px 0}
   background:transparent;
   display:block;
   margin:0 auto;
+}
+
+
+
+/* 核心功能特性样式 */
+.key-features {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255,184,107,0.05);
+  border-left: 4px solid var(--warn);
+  border-radius: 8px;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.key-features h4 {
+  color: var(--warn);
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+}
+
+.key-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.key-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,184,107,0.1);
+  font-size: 14px;
+  line-height: 1.6;
+  display: block;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.key-features li:last-child {
+  border-bottom: none;
+}
+
+.key-features li strong {
+  color: var(--warn);
+  display: inline;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  /* 响应式样式 */
 }
 .arch-svg .layer{
   transition:opacity 0.3s ease;
@@ -146,10 +204,122 @@ p{margin:0 0 12px 0}
 }
 .back-top:hover{transform:translateY(-2px);opacity:1}
 
+
+/* 信息化发展概述模块样式 */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.info-card {
+  background: rgba(16, 23, 34, 0.6);
+  border: 1px solid rgba(93, 214, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.info-card:hover {
+  border-color: var(--brand);
+  box-shadow: 0 8px 32px rgba(93, 214, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.info-card h3 {
+  color: var(--brand);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(93, 214, 255, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.info-card p {
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.transformation-timeline {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: rgba(16, 23, 34, 0.4);
+  border-radius: 16px;
+  border: 1px solid rgba(93, 214, 255, 0.1);
+}
+
+.transformation-timeline h3 {
+  color: var(--brand);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--brand), var(--accent));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: var(--brand);
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 3px var(--brand);
+}
+
+.timeline-phase {
+  color: var(--brand);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  color: var(--text);
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
 @media (max-width: 720px){
   .nav{display:none}
   h1{font-size:26px}
   h2{font-size:20px}
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .info-card {
+    padding: 1.5rem;
+  }
+  .transformation-timeline {
+    padding: 1.5rem;
+  }
 }
 
 
