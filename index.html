@@ -24,6 +24,7 @@
         <div class="container narrow">
           <h1>人力资源数据应用解决方案</h1>
           <p class="lead">基于全国31个省市自治区、300余个服务网点的服务实践，在人事服务、业务外包、工程分包、招聘猎头、培训培育等领域，提供从基础到高级的数据应用解决方案。</p>
+          
         </div>
         <div class="container">
           <!-- 常规应用 -->
@@ -40,10 +41,20 @@
                   <p><strong>执行摘要</strong>：围绕关键岗位建立分层能力模型与成长里程碑，以季度成长对话与导师机制闭环，提升内部流动与关键人才留存。</p>
                   <p><strong>解决的问题</strong>：晋升节奏不均衡，高潜在 2-3 年节点流失；发展路径不清晰，绩效过度单一评价。</p>
                   <p><strong>方法论与洞察</strong>：定义"角色期望—关键成果—行为证据"的三层结构；在绩效校准中加入"潜力×意愿"二维；通过轮岗与影子项目缩短胜任时间。</p>
-                  <p><strong>业务价值</strong>：显著提升内部晋升率，大幅缩短关键岗位填补时间，有效降低外部招聘成本，显著减少关键人才流失，直接节约人力成本。</p>
                   
+
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>智能能力画像：</strong>基于多维度数据构建员工能力雷达图，识别技能短板和发展潜力</li>
+                      <li><strong>个性化成长路径：</strong>智能推荐最适合的培训课程、轮岗机会和导师匹配</li>
+                      <li><strong>实时风险预警：</strong>算法预测员工离职风险，提前制定挽留策略</li>
+                      <li><strong>晋升决策支持：</strong>数据驱动的晋升建议，提升决策客观性和准确性</li>
+                    </ul>
+                  </div>
+
                   <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
+                    <h4>系统架构图</h4>
                     <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
@@ -54,73 +65,80 @@
                           </feMerge>
                         </filter>
                         <filter id="shadow1" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(110,255,167,0.3)"/>
+                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(93,214,255,0.3)"/>
                         </filter>
                       </defs>
+                      
                       <!-- 数据源层 -->
                       <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据源层</text>
+                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
+                        <text x="20" y="85" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
                         
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">员工档案数据</text>
+                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">员工档案系统</text>
                         
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">绩效评估数据</text>
+                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">绩效管理系统</text>
                         
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">培训记录数据</text>
+                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">培训管理系统</text>
                         
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">岗位能力模型</text>
+                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">HRIS系统</text>
                       </g>
                       
                       <!-- 数据处理层 -->
                       <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">数据处理层</text>
+                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
+                        <text x="20" y="175" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
                         
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">能力画像构建</text>
+                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">数据清洗</text>
                         
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">成长轨迹分析</text>
+                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">特征提取</text>
                         
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">潜力评估模型</text>
+                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">能力画像构建</text>
                         
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">发展路径匹配</text>
+                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">成长轨迹分析</text>
                       </g>
                       
                       <!-- 算法模型层 -->
                       <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">算法 / 模型层</text>
+                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
+                        <text x="20" y="265" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法模型层</text>
                         
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">能力差距分析</text>
+                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">能力评估模型</text>
                         
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">晋升预测模型</text>
+                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">潜力预测算法</text>
                         
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">导师匹配算法</text>
+                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">晋升推荐引擎</text>
                         
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
                         <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">流失风险预警</text>
                       </g>
                       
                       <!-- 应用展示层 -->
                       <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(110,255,167,0.25)" stroke="rgba(110,255,167,0.8)" stroke-width="3" filter="url(#glow1)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--accent)" font-size="18" font-weight="700" filter="url(#glow1)">应用展示层</text>
+                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow1)"/>
+                        <text x="20" y="355" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow1)">应用展示层</text>
                         
-                        <rect x="285" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow1)"/>
-                        <text x="350" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">员工发展仪表板</text>
+                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow1)"/>
+                        <text x="230" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">员工发展仪表板</text>
                         
-                        <rect x="435" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow1)"/>
-                        <text x="500" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">成长路径规划</text>
+                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow1)"/>
+                        <text x="380" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">成长路径规划</text>
+                        
+                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow1)"/>
+                        <text x="530" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">导师匹配系统</text>
+                        
+                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow1)"/>
+                        <text x="680" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">晋升决策支持</text>
                       </g>
                       
                       <!-- 连接箭头 -->
@@ -135,6 +153,8 @@
                       <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead1)"/>
                     </svg>
                   </div>
+
+                  <p><strong>核心数据集</strong>：员工基础档案（教育背景、工作经历、技能证书）、绩效评估记录（年度考核、项目表现、360度反馈）、培训发展轨迹（内训参与、外训成果、导师关系）、职业发展意愿（晋升目标、轮岗经历、离职风险指标）。</p>
                   
                   <p><strong>案例链接</strong>：<a href="https://app.powerbi.com/view?r=eyJrIjoiMDI1MTYyOGItNWExYS00MDc5LTlhNTgtNzE1Y2JhYTNlMDU5IiwidCI6Ijc5ZTI0MjFkLTYyN2QtNGMwMS1iYjlhLTNmZTM1MzEyZGY0NiJ9" target="_blank" rel="noopener noreferrer">点击前往</a></p>
                 </div>
@@ -142,108 +162,119 @@
 
               <article class="card">
                 <button class="card-header" data-target="case2">
-                  <h3>案例二：工程分包合同与人员配置管理</h3>
+                  <h3>案例二：合同和项目的管理分析</h3>
                   <span class="toggle-icon">+</span>
                 </button>
                 <div class="card-content collapsed" id="case2">
-                  <p><strong>执行摘要</strong>：针对工程分包项目特点，建立合同条款与人员配置的数字化映射，实现项目人员的最优配置与成本控制，提升项目交付成功率与客户满意度。</p>
-                  <p><strong>解决的问题</strong>：工程分包项目人员配置依赖经验判断，容易超配或不足；合同条款与人员技能、工时交付脱节；项目成本控制不精准，影响利润率。</p>
-                  <p><strong>方法论与洞察</strong>：建立合同-人员-工时-交付的数字化链路；基于历史项目数据构建人员配置模型；通过技能匹配与成本优化，实现"工程分包项目的精准交付"。</p>
-                  <p><strong>业务价值</strong>：大幅缩短项目配置决策时间，显著提升人员利用率，有效提升项目利润率，大幅改善成本控制精度，实现显著增收。</p>
+                  <p><strong>执行摘要</strong>：基于合同全生命周期管理，建立项目执行过程的数字化监控体系，通过合同条款解析、项目进度跟踪、风险预警机制，实现合同履约的精准管控与项目成功率的量化提升。</p>
+                  <p><strong>解决的问题</strong>：合同条款复杂多样，执行过程缺乏有效监控；项目进度与合同约定脱节，风险识别滞后；合同变更频繁，成本控制困难；客户满意度与合同履约关联度不明确。</p>
+                  <p><strong>方法论与洞察</strong>：建立合同条款智能解析与项目执行数据关联；构建项目进度、成本、质量的多维度监控模型；通过风险预警与自动提醒，实现"合同履约的全程可视化管控"。</p>
                   
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>智能合同解析：</strong>自动化的识别合同关键条款，提取履约条件和风险点</li>
+                      <li><strong>实时进度监控：</strong>项目里程碑可视化跟踪，自动预警延期风险</li>
+                      <li><strong>成本智能管控：</strong>预算执行监控，变更成本预测与优化建议</li>
+                      <li><strong>风险预警系统：</strong>多维度风险识别，提前预警潜在问题</li>
+                      <li><strong>客户满意度追踪：</strong>履约质量评估，客户反馈实时监控</li>
+                    </ul>
+                  </div>
+
                   <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
+                    <h4>系统架构图</h4>
                     <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
                           <feMerge> 
                             <feMergeNode in="coloredBlur"/>
                             <feMergeNode in="SourceGraphic"/>
                           </feMerge>
                         </filter>
                         <filter id="shadow2" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(255,184,107,0.3)"/>
+                          <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="rgba(93,214,255,0.3)"/>
                         </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">合同条款数据</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">项目历史数据</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">人员技能库</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">成本核算数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">合同解析</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">需求提取</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">技能匹配</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">工时计算</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">人员配置优化</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">成本预测模型</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">工期估算算法</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">风险预警系统</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(255,184,107,0.25)" stroke="rgba(255,184,107,0.8)" stroke-width="3" filter="url(#glow2)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--warn)" font-size="18" font-weight="700" filter="url(#glow2)">应用展示层</text>
-                        
-                        <rect x="285" y="335" width="130" height="30" rx="4" fill="rgba(255,184,107,0.2)" stroke="var(--warn)" stroke-width="2" filter="url(#shadow2)"/>
-                        <text x="350" y="353" text-anchor="middle" fill="var(--warn)" font-size="12" font-weight="600">合同 / 收入分析</text>
-                        
-                        <rect x="435" y="335" width="130" height="30" rx="4" fill="rgba(255,184,107,0.2)" stroke="var(--warn)" stroke-width="2" filter="url(#shadow2)"/>
-                        <text x="500" y="353" text-anchor="middle" fill="var(--warn)" font-size="12" font-weight="600">成本监控分析</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
                         <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                           <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
                         </marker>
                       </defs>
                       
-                      <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead2)"/>
-                      <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead2)"/>
-                      <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                      <!-- 数据源层 -->
+                      <g class="layer">
+                        <rect x="150" y="20" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
+                        <text x="20" y="55" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
+                        
+                        <rect x="170" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="220" y="53" text-anchor="middle" fill="var(--text)" font-size="12">合同系统</text>
+                        
+                        <rect x="290" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="340" y="53" text-anchor="middle" fill="var(--text)" font-size="12">项目系统</text>
+                        
+                        <rect x="410" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="460" y="53" text-anchor="middle" fill="var(--text)" font-size="12">财务系统</text>
+                        
+                        <rect x="530" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="580" y="53" text-anchor="middle" fill="var(--text)" font-size="12">客户系统</text>
+                      </g>
+                      
+                      <!-- 数据处理层 -->
+                      <g class="layer">
+                        <rect x="150" y="100" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
+                        <text x="20" y="135" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
+                        
+                        <rect x="170" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="220" y="133" text-anchor="middle" fill="var(--text)" font-size="12">合同解析</text>
+                        
+                        <rect x="290" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="340" y="133" text-anchor="middle" fill="var(--text)" font-size="12">进度监控</text>
+                        
+                        <rect x="410" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="460" y="133" text-anchor="middle" fill="var(--text)" font-size="12">成本分析</text>
+                        
+                        <rect x="530" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="580" y="133" text-anchor="middle" fill="var(--text)" font-size="12">风险预警</text>
+                      </g>
+                      
+                      <!-- 算法模型层 -->
+                      <g class="layer">
+                        <rect x="150" y="180" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
+                        <text x="20" y="215" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法模型层</text>
+                        
+                        <rect x="170" y="195" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="230" y="213" text-anchor="middle" fill="var(--text)" font-size="12">智能匹配算法</text>
+                        
+                        <rect x="310" y="195" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="370" y="213" text-anchor="middle" fill="var(--text)" font-size="12">风险预测模型</text>
+                        
+                        <rect x="450" y="195" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="510" y="213" text-anchor="middle" fill="var(--text)" font-size="12">成本优化算法</text>
+                      </g>
+                      
+                      <!-- 应用展示层 -->
+                      <g class="layer">
+                        <rect x="150" y="260" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow2)"/>
+                        <text x="20" y="295" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow2)">应用展示层</text>
+                        
+                        <rect x="165" y="275" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow2)"/>
+                        <text x="230" y="293" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">合同管理看板</text>
+                        
+                        <rect x="315" y="275" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow2)"/>
+                        <text x="380" y="293" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">项目进度图</text>
+                        
+                        <rect x="465" y="275" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow2)"/>
+                        <text x="530" y="293" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">风险预警中心</text>
+                      </g>
+                      
+                      <!-- 连接箭头 -->
+                      <line x1="450" y1="80" x2="450" y2="100" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                      <line x1="450" y1="160" x2="450" y2="180" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                      <line x1="450" y1="240" x2="450" y2="260" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead2)"/>
                     </svg>
                   </div>
+
+                  <p><strong>业务价值</strong>：大幅提升合同履约率，显著降低项目风险，有效控制合同变更成本，大幅改善客户满意度，实现合同管理的数字化转型。</p>
+                  <p><strong>核心数据集</strong>：合同条款数据（合同类型、条款内容、履约标准、变更记录、违约责任）、项目执行数据（进度节点、成本消耗、质量指标、资源投入、里程碑达成）、风险监控数据（预警信号、异常事件、变更申请、客户反馈、合规检查）、履约评估数据（完成度评分、客户满意度、成本控制效果、时间偏差分析）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
@@ -265,107 +296,112 @@
                   <p><strong>执行摘要</strong>：基于历史项目数据建立人员配置预测模型，结合外包员工流失风险预警系统，实现项目团队的最优配置与人员风险提前管控。</p>
                   <p><strong>解决的问题</strong>：项目人员配置依赖经验判断，容易超配或不足；外包员工流失风险难以预判，影响项目连续性；项目报价缺乏数据支撑，成本控制不精准。</p>
                   <p><strong>方法论与洞察</strong>：收集项目历史数据（类型、规模、工期、技能需求）；构建流失预测模型（考勤、绩效、合同、客户反馈）；通过数据驱动的团队配置与风险预警，实现"项目成功率的量化提升"。</p>
-                  <p><strong>业务价值</strong>：显著提升项目成功率，大幅缩短团队组建时间，有效减少项目失败损失，显著提升客户续约率，实现持续增收。</p>
                   
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>智能团队配置：</strong>基于项目需求自动推荐最优人员组合和技能匹配</li>
+                      <li><strong>流失风险预警：</strong>多维度数据分析，提前识别员工离职风险</li>
+                      <li><strong>项目成本预测：</strong>精准预算估算，优化资源配置和成本控制</li>
+                      <li><strong>技能匹配引擎：</strong>智能匹配人员技能与项目需求，提升团队效率</li>
+                      <li><strong>实时监控看板：</strong>项目进度、人员状态、风险指标一体化监控</li>
+                    </ul>
+                  </div>
+
                   <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
+                    <h4>系统架构图</h4>
                     <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
                           <feMerge> 
                             <feMergeNode in="coloredBlur"/>
                             <feMergeNode in="SourceGraphic"/>
                           </feMerge>
                         </filter>
                         <filter id="shadow3" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(93,214,255,0.3)"/>
+                          <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="rgba(93,214,255,0.3)"/>
                         </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">项目历史数据</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">员工行为数据</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">客户反馈数据</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">市场环境数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">特征工程</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">数据清洗</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">模式识别</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">异常检测</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">配置预测模型</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">流失预警模型</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">成功率预测</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">成本优化算法</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow3)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow3)">应用展示层</text>
-                        
-                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
-                        <text x="230" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">团队配置推荐</text>
-                        
-                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
-                        <text x="380" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">风险预警中心</text>
-                        
-                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
-                        <text x="530" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">项目成功率预测</text>
-                        
-                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
-                        <text x="680" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">成本控制仪表板</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
                         <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                           <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
                         </marker>
                       </defs>
                       
-                      <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead3)"/>
-                      <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead3)"/>
-                      <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead3)"/>
+                      <!-- 数据源层 -->
+                      <g class="layer">
+                        <rect x="150" y="20" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
+                        <text x="20" y="55" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
+                        
+                        <rect x="170" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="220" y="53" text-anchor="middle" fill="var(--text)" font-size="12">人员档案</text>
+                        
+                        <rect x="290" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="340" y="53" text-anchor="middle" fill="var(--text)" font-size="12">项目历史</text>
+                        
+                        <rect x="410" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="460" y="53" text-anchor="middle" fill="var(--text)" font-size="12">绩效数据</text>
+                        
+                        <rect x="530" y="35" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="580" y="53" text-anchor="middle" fill="var(--text)" font-size="12">考勤系统</text>
+                      </g>
+                      
+                      <!-- 数据处理层 -->
+                      <g class="layer">
+                        <rect x="150" y="100" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
+                        <text x="20" y="135" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
+                        
+                        <rect x="170" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="220" y="133" text-anchor="middle" fill="var(--text)" font-size="12">数据清洗</text>
+                        
+                        <rect x="290" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="340" y="133" text-anchor="middle" fill="var(--text)" font-size="12">特征提取</text>
+                        
+                        <rect x="410" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="460" y="133" text-anchor="middle" fill="var(--text)" font-size="12">能力建模</text>
+                        
+                        <rect x="530" y="115" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="580" y="133" text-anchor="middle" fill="var(--text)" font-size="12">风险分析</text>
+                      </g>
+                      
+                      <!-- 算法模型层 -->
+                      <g class="layer">
+                        <rect x="150" y="180" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
+                        <text x="20" y="215" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法模型层</text>
+                        
+                        <rect x="170" y="195" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="230" y="213" text-anchor="middle" fill="var(--text)" font-size="12">配置预测模型</text>
+                        
+                        <rect x="310" y="195" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="370" y="213" text-anchor="middle" fill="var(--text)" font-size="12">流失预警算法</text>
+                        
+                        <rect x="450" y="195" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="510" y="213" text-anchor="middle" fill="var(--text)" font-size="12">技能匹配引擎</text>
+                      </g>
+                      
+                      <!-- 应用展示层 -->
+                      <g class="layer">
+                        <rect x="150" y="260" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow3)"/>
+                        <text x="20" y="295" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow3)">应用展示层</text>
+                        
+                        <rect x="165" y="275" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
+                        <text x="230" y="293" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">团队配置推荐</text>
+                        
+                        <rect x="315" y="275" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
+                        <text x="380" y="293" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">风险预警中心</text>
+                        
+                        <rect x="465" y="275" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow3)"/>
+                        <text x="530" y="293" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">项目监控看板</text>
+                      </g>
+                      
+                      <!-- 连接箭头 -->
+                      <line x1="450" y1="80" x2="450" y2="100" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead3)"/>
+                      <line x1="450" y1="160" x2="450" y2="180" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead3)"/>
+                      <line x1="450" y1="240" x2="450" y2="260" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead3)"/>
                     </svg>
                   </div>
+
+                  <p><strong>业务价值</strong>：显著提升项目成功率，大幅缩短团队组建时间，有效减少项目失败损失，显著提升客户续约率，实现持续增收。</p>
+                  <p><strong>核心数据集</strong>：项目需求规格（技术栈、规模、工期、预算、交付标准）、人员技能档案（专业能力、项目经验、协作能力、可用性）、历史项目数据（团队配置、完成情况、成本控制、客户满意度）、流失风险指标（考勤记录、绩效表现、合同状态、客户反馈）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
@@ -380,107 +416,112 @@
                   <p><strong>执行摘要</strong>：基于全国31个省市自治区的服务网络，构建跨区域薪酬数据库，为客户提供多地区、多行业的薪酬竞争力分析，助力企业在不同区域的人才竞争中保持优势。</p>
                   <p><strong>解决的问题</strong>：跨区域薪酬标准不统一，难以制定合理方案；不同地区人才竞争激烈程度差异大；缺乏区域化薪酬策略指导，影响人才吸引与留存。</p>
                   <p><strong>方法论与洞察</strong>：整合全国300余个服务网点的薪酬数据；建立区域化薪酬竞争力指数；通过多维度对标分析，实现"因地制宜的薪酬策略制定"。</p>
-                  <p><strong>业务价值</strong>：大幅缩短薪酬方案制定时间，显著提升人才吸引效率，有效降低人才获取成本，大幅提升关键岗位招聘成功率，实现成本节约。</p>
                   
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>区域薪酬地图：</strong>可视化展示全国31个省市自治区的薪酬水平分布</li>
+                      <li><strong>行业对标分析：</strong>多维度对比同行业企业薪酬结构和竞争力</li>
+                      <li><strong>智能薪酬建议：</strong>基于市场数据自动生成个性化薪酬方案</li>
+                      <li><strong>人才流动预测：</strong>分析区域间人才流动趋势和跳槽规律</li>
+                      <li><strong>成本效益优化：</strong>平衡薪酬竞争力与成本控制的最优策略</li>
+                    </ul>
+                  </div>
+
                   <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
+                    <h4>系统架构图</h4>
                     <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
                           <feMerge> 
                             <feMergeNode in="coloredBlur"/>
                             <feMergeNode in="SourceGraphic"/>
                           </feMerge>
                         </filter>
                         <filter id="shadow4" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(110,255,167,0.3)"/>
+                          <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="rgba(93,214,255,0.3)"/>
                         </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">区域薪酬数据</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">行业基准数据</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">生活成本指数</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">人才流动数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">数据标准化</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">区域聚类</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">指数计算</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">趋势分析</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">竞争力指数模型</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">区域对比算法</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">薪酬预测模型</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">策略推荐引擎</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(110,255,167,0.25)" stroke="rgba(110,255,167,0.8)" stroke-width="3" filter="url(#glow4)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--accent)" font-size="18" font-weight="700" filter="url(#glow4)">应用展示层</text>
-                        
-                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow4)"/>
-                        <text x="230" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">薪酬对标报告</text>
-                        
-                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow4)"/>
-                        <text x="380" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">区域竞争力地图</text>
-                        
-                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow4)"/>
-                        <text x="530" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">薪酬策略建议</text>
-                        
-                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow4)"/>
-                        <text x="680" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">市场趋势分析</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
                         <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                           <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
                         </marker>
                       </defs>
                       
+                      <!-- 数据源层 -->
+                      <g class="layer">
+                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
+                        <text x="20" y="85" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
+                        
+                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">薪酬数据库</text>
+                        
+                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">区域经济</text>
+                        
+                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">行业数据</text>
+                        
+                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
+                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">人才市场</text>
+                      </g>
+                      
+                      <!-- 数据处理层 -->
+                      <g class="layer">
+                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
+                        <text x="20" y="175" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
+                        
+                        <rect x="170" y="160" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="230" y="178" text-anchor="middle" fill="var(--text)" font-size="12">数据清洗</text>
+                        
+                        <rect x="310" y="160" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="370" y="178" text-anchor="middle" fill="var(--text)" font-size="12">特征提取</text>
+                        
+                        <rect x="450" y="160" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="510" y="178" text-anchor="middle" fill="var(--text)" font-size="12">区域建模</text>
+                        
+                        <rect x="590" y="160" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
+                        <text x="650" y="178" text-anchor="middle" fill="var(--text)" font-size="12">竞争力分析</text>
+                      </g>
+                      
+                      <!-- 算法模型层 -->
+                      <g class="layer">
+                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
+                        <text x="20" y="265" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法模型层</text>
+                        
+                        <rect x="170" y="250" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="230" y="268" text-anchor="middle" fill="var(--text)" font-size="12">区域对比算法</text>
+                        
+                        <rect x="310" y="250" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="370" y="268" text-anchor="middle" fill="var(--text)" font-size="12">行业对标模型</text>
+                        
+                        <rect x="450" y="250" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
+                        <text x="510" y="268" text-anchor="middle" fill="var(--text)" font-size="12">流动预测引擎</text>
+                      </g>
+                      
+                      <!-- 应用展示层 -->
+                      <g class="layer">
+                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow4)"/>
+                        <text x="20" y="355" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow4)">应用展示层</text>
+                        
+                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow4)"/>
+                        <text x="230" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">薪酬地图</text>
+                        
+                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow4)"/>
+                        <text x="380" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">对标报告</text>
+                        
+                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow4)"/>
+                        <text x="530" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">薪酬建议</text>
+                      </g>
+                      
+                      <!-- 连接箭头 -->
                       <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead4)"/>
                       <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead4)"/>
                       <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead4)"/>
                     </svg>
                   </div>
+
+                  <p><strong>业务价值</strong>：大幅缩短薪酬方案制定时间，显著提升人才吸引效率，有效降低人才获取成本，大幅提升关键岗位招聘成功率，实现成本节约。</p>
+                  <p><strong>核心数据集</strong>：全国薪酬数据库（31个省市自治区的行业薪酬水平、职位等级、福利标准）、区域经济数据（GDP、人均收入、生活成本指数、人才竞争激烈程度）、行业对标数据（同行业企业薪酬结构、人才流动趋势、招聘成功率）、人才市场数据（供需关系、薪资期望、跳槽频率、关键岗位稀缺度）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
@@ -502,107 +543,21 @@
                   <p><strong>执行摘要</strong>：依托全国31个省市自治区的服务网络，建立区域性人才需求预测模型，实现跨区域人才蓄水池的智能管理，为客户提供前瞻性人才供应保障。</p>
                   <p><strong>解决的问题</strong>：全国性人才需求波动难以预测；区域间人才流动不均衡；紧急招聘需求响应慢，错失最佳人才获取时机。</p>
                   <p><strong>方法论与洞察</strong>：融合全国服务网点的招聘数据与区域经济指标；建立多区域人才需求预测模型；通过"人才激活"机制，实现"全国一盘棋"的人才供应网络。</p>
-                  <p><strong>业务价值</strong>：大幅提升人才匹配速度，显著改善跨区域调配效率，有效降低人才供应成本，大幅减少紧急招聘溢价，实现持续增收。</p>
                   
-                  <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
-                    <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <filter id="glow5" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                          <feMerge> 
-                            <feMergeNode in="coloredBlur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                          </feMerge>
-                        </filter>
-                        <filter id="shadow5" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(255,184,107,0.3)"/>
-                        </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">全国招聘数据</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">区域经济指标</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">人才流动轨迹</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">产业政策数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">时空数据融合</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">需求特征提取</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">趋势识别</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">异常检测</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">需求预测模型</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">流动预测算法</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">蓄水池优化</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">激活策略引擎</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(255,184,107,0.25)" stroke="rgba(255,184,107,0.8)" stroke-width="3" filter="url(#glow5)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--warn)" font-size="18" font-weight="700" filter="url(#glow5)">应用展示层</text>
-                        
-                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(255,184,107,0.2)" stroke="var(--warn)" stroke-width="2" filter="url(#shadow5)"/>
-                        <text x="230" y="353" text-anchor="middle" fill="var(--warn)" font-size="12" font-weight="600">需求预测仪表板</text>
-                        
-                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(255,184,107,0.2)" stroke="var(--warn)" stroke-width="2" filter="url(#shadow5)"/>
-                        <text x="380" y="353" text-anchor="middle" fill="var(--warn)" font-size="12" font-weight="600">人才流动地图</text>
-                        
-                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(255,184,107,0.2)" stroke="var(--warn)" stroke-width="2" filter="url(#shadow5)"/>
-                        <text x="530" y="353" text-anchor="middle" fill="var(--warn)" font-size="12" font-weight="600">蓄水池管理</text>
-                        
-                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(255,184,107,0.2)" stroke="var(--warn)" stroke-width="2" filter="url(#shadow5)"/>
-                        <text x="680" y="353" text-anchor="middle" fill="var(--warn)" font-size="12" font-weight="600">智能推荐系统</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
-                        <marker id="arrowhead5" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                          <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
-                        </marker>
-                      </defs>
-                      
-                      <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead5)"/>
-                      <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead5)"/>
-                      <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead5)"/>
-                    </svg>
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>需求预测引擎：</strong>基于历史数据和趋势分析，预测未来人才需求变化</li>
+                      <li><strong>人才蓄水池：</strong>跨区域人才资源池，实现快速人才调配和供应</li>
+                      <li><strong>智能匹配系统：</strong>自动匹配人才技能与岗位需求，提升匹配效率</li>
+                      <li><strong>流动轨迹分析：</strong>追踪人才跨区域流动模式，优化人才配置策略</li>
+                      <li><strong>政策影响评估：</strong>分析产业政策对人才需求的影响，提前布局</li>
+                    </ul>
                   </div>
+
+
+                  <p><strong>业务价值</strong>：大幅提升人才匹配速度，显著改善跨区域调配效率，有效降低人才供应成本，大幅减少紧急招聘溢价，实现持续增收。</p>
+                  <p><strong>核心数据集</strong>：全国招聘需求数据（31个省市自治区的职位发布、技能要求、薪资水平、招聘周期）、区域经济指标（GDP增长率、产业结构、政策导向、投资热点）、人才流动轨迹（跨区域跳槽记录、职业发展路径、技能迁移模式）、产业政策数据（人才引进政策、税收优惠、产业扶持措施）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
@@ -617,107 +572,21 @@
                   <p><strong>执行摘要</strong>：从"人员供应商"升级为"高效团队解决方案提供商"，通过团队画像与能力建模，智能推荐最优团队组合，预测项目成功概率，提供远超"凑人头"的价值。</p>
                   <p><strong>解决的问题</strong>：团队组建依赖经验判断，缺乏科学依据；成员间协作效率不可预测；项目风险难以提前识别，成功率不稳定。</p>
                   <p><strong>方法论与洞察</strong>：收集硬技能+软技能+合作经验数据；利用图数据库分析人才关系网络；基于项目目标推荐最优团队组合，实现"95%项目成功率"的量化承诺。</p>
-                  <p><strong>业务价值</strong>：显著提升团队组建效率，大幅缩短项目交付周期，大幅提升项目成功率，显著改善客户满意度，实现持续增收。</p>
                   
-                  <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
-                    <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <filter id="glow6" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                          <feMerge> 
-                            <feMergeNode in="coloredBlur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                          </feMerge>
-                        </filter>
-                        <filter id="shadow6" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(93,214,255,0.3)"/>
-                        </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">个人能力档案</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">协作历史数据</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">项目成功案例</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">团队绩效数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">能力画像构建</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">关系网络分析</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">兼容性评估</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">特征工程</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">团队组合优化</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">绩效预测模型</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">风险识别算法</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">成功概率计算</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow6)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow6)">应用展示层</text>
-                        
-                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow6)"/>
-                        <text x="230" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">团队推荐引擎</text>
-                        
-                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow6)"/>
-                        <text x="380" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">绩效预测仪表板</text>
-                        
-                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow6)"/>
-                        <text x="530" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">风险预警系统</text>
-                        
-                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow6)"/>
-                        <text x="680" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">成功概率展示</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
-                        <marker id="arrowhead6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                          <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
-                        </marker>
-                      </defs>
-                      
-                      <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead6)"/>
-                      <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead6)"/>
-                      <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead6)"/>
-                    </svg>
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>团队画像建模：</strong>多维度分析团队成员技能、性格、协作风格</li>
+                      <li><strong>智能团队推荐：</strong>基于项目需求自动推荐最优团队组合</li>
+                      <li><strong>绩效预测模型：</strong>预测团队协作效率和项目成功概率</li>
+                      <li><strong>协作关系分析：</strong>利用图数据库分析团队成员间的协作关系</li>
+                      <li><strong>动态优化调整：</strong>根据项目进展实时调整团队配置</li>
+                    </ul>
                   </div>
+
+
+                  <p><strong>业务价值</strong>：显著提升团队组建效率，大幅缩短项目交付周期，大幅提升项目成功率，显著改善客户满意度，实现持续增收。</p>
+                  <p><strong>核心数据集</strong>：人员技能档案（硬技能、软技能、专业认证、项目经验、协作风格）、协作历史数据（团队合作记录、沟通效率、冲突解决、项目配合度）、项目需求数据（技术栈要求、团队规模、项目复杂度、交付标准）、绩效表现数据（项目完成质量、客户满意度、团队贡献度、成长轨迹）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
@@ -732,107 +601,21 @@
                   <p><strong>执行摘要</strong>：结合培训培育业务优势，建立从招聘到离职的全流程体验管理体系，通过个性化培训赋能路径，提升员工满意度与客户续约率，实现服务价值的量化证明。</p>
                   <p><strong>解决的问题</strong>：外包员工体验管理缺乏系统性；培训资源与个人发展需求不匹配；客户续约率与员工成长关联度不明确；服务价值难以量化展示。</p>
                   <p><strong>方法论与洞察</strong>：建立全流程NPS体验追踪体系；整合培训培育资源与个人发展意愿；通过"员工成长→客户价值"的闭环证明，实现"培训赋能"向"商业价值"的转化。</p>
-                  <p><strong>业务价值</strong>：显著提升员工满意度，大幅改善培训ROI，有效提升客户续约率，显著增强服务溢价能力，实现持续增收。</p>
                   
-                  <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
-                    <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <filter id="glow7" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                          <feMerge> 
-                            <feMergeNode in="coloredBlur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                          </feMerge>
-                        </filter>
-                        <filter id="shadow7" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(110,255,167,0.3)"/>
-                        </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">员工体验数据</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">培训记录数据</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">客户反馈数据</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">成长轨迹数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">体验数据清洗</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">需求匹配分析</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">价值关联建模</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">趋势识别</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">体验评分模型</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">培训推荐算法</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">价值量化模型</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">续约预测模型</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(110,255,167,0.25)" stroke="rgba(110,255,167,0.8)" stroke-width="3" filter="url(#glow7)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--accent)" font-size="18" font-weight="700" filter="url(#glow7)">应用展示层</text>
-                        
-                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow7)"/>
-                        <text x="230" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">体验管理仪表板</text>
-                        
-                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow7)"/>
-                        <text x="380" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">培训路径规划</text>
-                        
-                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow7)"/>
-                        <text x="530" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">价值证明报告</text>
-                        
-                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(110,255,167,0.2)" stroke="var(--accent)" stroke-width="2" filter="url(#shadow7)"/>
-                        <text x="680" y="353" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">续约预测中心</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
-                        <marker id="arrowhead7" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                          <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
-                        </marker>
-                      </defs>
-                      
-                      <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead7)"/>
-                      <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead7)"/>
-                      <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead7)"/>
-                    </svg>
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>全流程NPS追踪：</strong>从入职到离职的全生命周期体验数据监控</li>
+                      <li><strong>个性化培训路径：</strong>基于员工技能和发展意愿定制培训方案</li>
+                      <li><strong>价值闭环证明：</strong>量化员工成长对客户价值的贡献度</li>
+                      <li><strong>续约预测模型：</strong>基于员工满意度预测客户续约概率</li>
+                      <li><strong>服务溢价分析：</strong>分析培训投入与客户价值提升的关联性</li>
+                    </ul>
                   </div>
+
+
+                  <p><strong>业务价值</strong>：显著提升员工满意度，大幅改善培训ROI，有效提升客户续约率，显著增强服务溢价能力，实现持续增收。</p>
+                  <p><strong>核心数据集</strong>：员工体验数据（NPS评分、满意度调查、离职原因、工作环境反馈）、培训记录数据（培训参与度、技能提升轨迹、认证获得情况、学习效果评估）、客户反馈数据（服务质量评价、续约意愿、合作满意度、价值感知）、续约历史数据（合同续签率、续约周期、价格变化、服务升级记录）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
@@ -847,114 +630,216 @@
                   <p><strong>执行摘要</strong>：基于全国31个省市自治区的服务网络数据，构建人才流动监测体系，识别大规模产业集中地的人才供需特征，为客户提供区域化人才策略与投资决策支持。</p>
                   <p><strong>解决的问题</strong>：缺乏全国性人才流动趋势洞察；产业集中地人才竞争态势不清晰；区域人才政策制定缺乏数据支撑；企业跨区域布局缺乏人才市场指导。</p>
                   <p><strong>方法论与洞察</strong>：整合全国服务网点的人才流动数据与产业分布信息；建立人才流动热力图与产业集中度分析模型；通过多维度调研报告，实现"数据驱动的区域人才战略规划"。</p>
-                  <p><strong>业务价值</strong>：大幅缩短区域人才策略制定时间，显著提升投资决策准确率，抢占人才高地先机，实现区域业务快速增长，获得持续增收。</p>
                   
-                  <div class="architecture-diagram">
-                    <h4>数据 / 系统架构图</h4>
-                    <svg viewBox="0 0 900 400" class="arch-svg" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <!-- 发光效果滤镜 -->
-                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                          <feMerge> 
-                            <feMergeNode in="coloredBlur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                          </feMerge>
-                        </filter>
-                        <!-- 阴影效果滤镜 -->
-                        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-                          <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(93,214,255,0.3)"/>
-                        </filter>
-                      </defs>
-                      <!-- 数据源层 -->
-                      <g class="layer">
-                        <rect x="150" y="50" width="600" height="60" rx="8" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="2"/>
-                        <text x="20" y="85" text-anchor="start" fill="var(--brand)" font-size="16" font-weight="600">数据源层</text>
-                        
-                        <!-- 数据源节点 -->
-                        <rect x="170" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="230" y="88" text-anchor="middle" fill="var(--text)" font-size="12">服务网点数据</text>
-                        
-                        <rect x="310" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="370" y="88" text-anchor="middle" fill="var(--text)" font-size="12">人才流动数据</text>
-                        
-                        <rect x="450" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="510" y="88" text-anchor="middle" fill="var(--text)" font-size="12">产业分布数据</text>
-                        
-                        <rect x="590" y="70" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--brand)"/>
-                        <text x="650" y="88" text-anchor="middle" fill="var(--text)" font-size="12">宏观经济数据</text>
-                      </g>
-                      
-                      <!-- 数据处理层 -->
-                      <g class="layer">
-                        <rect x="150" y="140" width="600" height="60" rx="8" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="2"/>
-                        <text x="20" y="175" text-anchor="start" fill="var(--accent)" font-size="16" font-weight="600">数据处理层</text>
-                        
-                        <rect x="175" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="225" y="173" text-anchor="middle" fill="var(--text)" font-size="12">数据清洗</text>
-                        
-                        <rect x="300" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="350" y="173" text-anchor="middle" fill="var(--text)" font-size="12">数据融合</text>
-                        
-                        <rect x="425" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="475" y="173" text-anchor="middle" fill="var(--text)" font-size="12">特征工程</text>
-                        
-                        <rect x="550" y="155" width="100" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--accent)"/>
-                        <text x="600" y="173" text-anchor="middle" fill="var(--text)" font-size="12">数据标准化</text>
-                      </g>
-                      
-                      <!-- 算法模型层 -->
-                      <g class="layer">
-                        <rect x="150" y="230" width="600" height="60" rx="8" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="2"/>
-                        <text x="20" y="265" text-anchor="start" fill="var(--warn)" font-size="16" font-weight="600">算法 / 模型层</text>
-                        
-                        <rect x="170" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="230" y="263" text-anchor="middle" fill="var(--text)" font-size="12">人才流动预测</text>
-                        
-                        <rect x="310" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="370" y="263" text-anchor="middle" fill="var(--text)" font-size="12">产业集中度分析</text>
-                        
-                        <rect x="450" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="510" y="263" text-anchor="middle" fill="var(--text)" font-size="12">区域竞争力评估</text>
-                        
-                        <rect x="590" y="245" width="120" height="30" rx="4" fill="rgba(16,23,34,0.8)" stroke="var(--warn)"/>
-                        <text x="650" y="263" text-anchor="middle" fill="var(--text)" font-size="12">趋势预测模型</text>
-                      </g>
-                      
-                      <!-- 应用展示层 -->
-                      <g class="layer">
-                        <rect x="150" y="320" width="600" height="60" rx="8" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#glow)"/>
-                        <text x="20" y="355" text-anchor="start" fill="var(--brand)" font-size="18" font-weight="700" filter="url(#glow)">应用展示层</text>
-                        
-                        <rect x="165" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow)"/>
-                        <text x="230" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">人才流动热力图</text>
-                        
-                        <rect x="315" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow)"/>
-                        <text x="380" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">产业集中地分布</text>
-                        
-                        <rect x="465" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow)"/>
-                        <text x="530" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">调研报告生成</text>
-                        
-                        <rect x="615" y="335" width="130" height="30" rx="4" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="2" filter="url(#shadow)"/>
-                        <text x="680" y="353" text-anchor="middle" fill="var(--brand)" font-size="12" font-weight="600">决策支持系统</text>
-                      </g>
-                      
-                      <!-- 连接箭头 -->
-                      <defs>
-                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                          <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
-                        </marker>
-                      </defs>
-                      
-                      <line x1="450" y1="110" x2="450" y2="140" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)"/>
-                      <line x1="450" y1="200" x2="450" y2="230" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)"/>
-                      <line x1="450" y1="290" x2="450" y2="320" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)"/>
-                    </svg>
+                  <div class="key-features">
+                    <h4>核心功能特性</h4>
+                    <ul>
+                      <li><strong>人才流动热力图：</strong>可视化展示全国人才流动趋势和热点区域</li>
+                      <li><strong>产业集中度分析：</strong>识别产业集群分布和人才需求特征</li>
+                      <li><strong>区域竞争态势：</strong>分析不同区域的人才竞争激烈程度</li>
+                      <li><strong>政策影响评估：</strong>评估人才政策对流动趋势的影响</li>
+                      <li><strong>投资决策支持：</strong>为企业跨区域布局提供人才市场指导</li>
+                    </ul>
                   </div>
+
+
+                  <p><strong>业务价值</strong>：大幅缩短区域人才策略制定时间，显著提升投资决策准确率，抢占人才高地先机，实现区域业务快速增长，获得持续增收。</p>
+                  <p><strong>核心数据集</strong>：服务网点数据（全国300余个网点的招聘需求、人才供应、服务能力、客户分布）、人才流动数据（跨区域跳槽记录、职业发展轨迹、技能迁移模式、流动原因分析）、产业分布数据（产业集群分布、产业政策导向、投资热点区域、人才需求结构）、宏观经济数据（区域GDP、产业结构、政策环境、人才竞争激烈程度）。</p>
                   
                   <p><strong>案例链接：略</strong></p>
                 </div>
               </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 数据仓库架构图 -->
+      <section class="section">
+        <div class="container">
+          <h2>数据仓库架构</h2>
+          <p class="lead">基于全国31个省市自治区、300余个服务网点的数据积累，构建完整的数据仓库体系，支撑各类数据应用场景。</p>
+          
+          <div class="architecture-diagram">
+            <svg viewBox="0 0 1200 700" class="arch-svg" width="100%" height="700" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="warehouse-glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                  <feMerge> 
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+                <filter id="warehouse-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(93,214,255,0.4)"/>
+                </filter>
+                <filter id="mdm-glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                  <feMerge> 
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+                <marker id="warehouse-arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)"/>
+                </marker>
+              </defs>
+              
+              <!-- 数据源层 -->
+              <g class="layer">
+                <rect x="200" y="80" width="800" height="80" rx="10" fill="rgba(93,214,255,0.1)" stroke="rgba(93,214,255,0.3)" stroke-width="3"/>
+                <text x="-20" y="125" text-anchor="start" fill="var(--brand)" font-size="35" font-weight="600">数据源层</text>
+                
+                <rect x="220" y="100" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--brand)" stroke-width="3"/>
+                <text x="295" y="125" text-anchor="middle" fill="var(--text)" font-size="22">HRIS系统</text>
+                
+                <rect x="390" y="100" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--brand)" stroke-width="3"/>
+                <text x="465" y="125" text-anchor="middle" fill="var(--text)" font-size="22">招聘系统</text>
+                
+                <rect x="560" y="100" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--brand)" stroke-width="3"/>
+                <text x="635" y="125" text-anchor="middle" fill="var(--text)" font-size="22">绩效系统</text>
+                
+                <rect x="730" y="100" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--brand)" stroke-width="3"/>
+                <text x="805" y="125" text-anchor="middle" fill="var(--text)" font-size="22">培训系统</text>
+              </g>
+              
+              <!-- 数据采集层 -->
+              <g class="layer">
+                <rect x="200" y="200" width="800" height="80" rx="10" fill="rgba(110,255,167,0.1)" stroke="rgba(110,255,167,0.3)" stroke-width="3"/>
+                <text x="-20" y="245" text-anchor="start" fill="var(--accent)" font-size="35" font-weight="600">数据采集层</text>
+                
+                <rect x="220" y="220" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--accent)" stroke-width="3"/>
+                <text x="295" y="245" text-anchor="middle" fill="var(--text)" font-size="22">实时采集</text>
+                
+                <rect x="390" y="220" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--accent)" stroke-width="3"/>
+                <text x="465" y="245" text-anchor="middle" fill="var(--text)" font-size="22">批量采集</text>
+                
+                <rect x="560" y="220" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--accent)" stroke-width="3"/>
+                <text x="635" y="245" text-anchor="middle" fill="var(--text)" font-size="22">API接口</text>
+                
+                <rect x="730" y="220" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--accent)" stroke-width="3"/>
+                <text x="805" y="245" text-anchor="middle" fill="var(--text)" font-size="22">数据清洗</text>
+              </g>
+              
+              <!-- 数据存储层 -->
+              <g class="layer">
+                <rect x="200" y="320" width="800" height="80" rx="10" fill="rgba(255,184,107,0.1)" stroke="rgba(255,184,107,0.3)" stroke-width="3"/>
+                <text x="-20" y="365" text-anchor="start" fill="var(--warn)" font-size="35" font-weight="600">数据存储层</text>
+                
+                <rect x="220" y="340" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--warn)" stroke-width="3"/>
+                <text x="295" y="365" text-anchor="middle" fill="var(--text)" font-size="22">ODS层</text>
+                
+                <rect x="390" y="340" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--warn)" stroke-width="3"/>
+                <text x="465" y="365" text-anchor="middle" fill="var(--text)" font-size="22">DWD层</text>
+                
+                <rect x="560" y="340" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--warn)" stroke-width="3"/>
+                <text x="635" y="365" text-anchor="middle" fill="var(--text)" font-size="22">DWS层</text>
+                
+                <rect x="730" y="340" width="150" height="40" rx="6" fill="rgba(16,23,34,0.8)" stroke="var(--warn)" stroke-width="3"/>
+                <text x="805" y="365" text-anchor="middle" fill="var(--text)" font-size="22">ADS层</text>
+              </g>
+              
+              <!-- 主数据系统 (MDM) -->
+              <g class="layer">
+                <rect x="200" y="440" width="800" height="80" rx="10" fill="rgba(255,107,107,0.15)" stroke="rgba(255,107,107,0.3)" stroke-width="3" filter="url(#mdm-glow)"/>
+                <text x="-20" y="485" text-anchor="start" fill="#ff6b6b" font-size="35" font-weight="600" filter="url(#mdm-glow)">主数据系统</text>
+                
+                <rect x="220" y="460" width="150" height="40" rx="6" fill="rgba(255,107,107,0.2)" stroke="#ff6b6b" stroke-width="3"/>
+                <text x="295" y="485" text-anchor="middle" fill="#ff6b6b" font-size="22" font-weight="600">员工主数据</text>
+                
+                <rect x="390" y="460" width="150" height="40" rx="6" fill="rgba(255,107,107,0.2)" stroke="#ff6b6b" stroke-width="3"/>
+                <text x="465" y="485" text-anchor="middle" fill="#ff6b6b" font-size="22" font-weight="600">组织主数据</text>
+                
+                <rect x="560" y="460" width="150" height="40" rx="6" fill="rgba(255,107,107,0.2)" stroke="#ff6b6b" stroke-width="3"/>
+                <text x="635" y="485" text-anchor="middle" fill="#ff6b6b" font-size="22" font-weight="600">客户主数据</text>
+              </g>
+              
+              <!-- 数据服务层 -->
+              <g class="layer">
+                <rect x="200" y="560" width="800" height="80" rx="10" fill="rgba(93,214,255,0.25)" stroke="rgba(93,214,255,0.8)" stroke-width="3" filter="url(#warehouse-glow)"/>
+                <text x="-20" y="605" text-anchor="start" fill="var(--brand)" font-size="35" font-weight="700" filter="url(#warehouse-glow)">数据服务层</text>
+                
+                <rect x="220" y="580" width="150" height="40" rx="6" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="3" filter="url(#warehouse-shadow)"/>
+                <text x="295" y="605" text-anchor="middle" fill="var(--brand)" font-size="22" font-weight="600">API服务</text>
+                
+                <rect x="390" y="580" width="150" height="40" rx="6" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="3" filter="url(#warehouse-shadow)"/>
+                <text x="465" y="605" text-anchor="middle" fill="var(--brand)" font-size="22" font-weight="600">报表服务</text>
+                
+                <rect x="560" y="580" width="150" height="40" rx="6" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="3" filter="url(#warehouse-shadow)"/>
+                <text x="635" y="605" text-anchor="middle" fill="var(--brand)" font-size="22" font-weight="600">分析服务</text>
+                
+                <rect x="730" y="580" width="150" height="40" rx="6" fill="rgba(93,214,255,0.2)" stroke="var(--brand)" stroke-width="3" filter="url(#warehouse-shadow)"/>
+                <text x="805" y="605" text-anchor="middle" fill="var(--brand)" font-size="22" font-weight="600">可视化服务</text>
+              </g>
+              
+              <!-- 连接箭头 -->
+              <line x1="600" y1="160" x2="600" y2="200" stroke="var(--muted)" stroke-width="3" marker-end="url(#warehouse-arrow)"/>
+              <line x1="600" y1="280" x2="600" y2="320" stroke="var(--muted)" stroke-width="3" marker-end="url(#warehouse-arrow)"/>
+              <line x1="600" y1="400" x2="600" y2="440" stroke="var(--muted)" stroke-width="3" marker-end="url(#warehouse-arrow)"/>
+              <line x1="600" y1="520" x2="600" y2="560" stroke="var(--muted)" stroke-width="3" marker-end="url(#warehouse-arrow)"/>
+              
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- 信息化发展概述 -->
+      <section class="section">
+        <div class="container">
+          <h2>信息化发展与数字化转型同步推进</h2>
+          <p class="lead">在数字化浪潮中，企业需要在推进数字化转型的同时，同步做好信息化基础设施建设，实现技术与业务的深度融合。</p>
+          
+          <div class="info-grid">
+            <div class="info-card">
+              <h3>数据驱动决策</h3>
+              <p>建立完善的数据治理体系，确保数据质量与安全，通过数据分析和可视化工具，为管理层提供科学决策依据，实现从经验驱动向数据驱动的转变。</p>
+            </div>
+            
+            <div class="info-card">
+              <h3>业务流程优化</h3>
+              <p>运用信息技术重构业务流程，消除信息孤岛，提升运营效率。通过自动化工具减少人工操作，降低错误率，实现业务流程的标准化和智能化。</p>
+            </div>
+            
+            <div class="info-card">
+              <h3>组织能力建设</h3>
+              <p>培养数字化人才队伍，提升全员数字化素养。建立学习型组织，持续更新知识结构，确保组织能力与技术进步保持同步发展。</p>
+            </div>
+            
+            <div class="info-card">
+              <h3>技术架构升级</h3>
+              <p>构建灵活可扩展的技术架构，采用云原生、微服务等先进技术，确保系统的高可用性和可维护性，为业务快速发展提供坚实的技术支撑。</p>
+            </div>
+            
+            <div class="info-card">
+              <h3>创新文化培育</h3>
+              <p>营造鼓励创新的企业文化，建立容错机制，支持员工尝试新技术、新方法。通过创新驱动发展，保持企业在行业中的竞争优势。</p>
+            </div>
+            
+            <div class="info-card">
+              <h3>生态协同发展</h3>
+              <p>与合作伙伴、供应商、客户建立数字化协同网络，实现信息共享和资源优化配置，构建互利共赢的数字化生态系统。</p>
+            </div>
+          </div>
+          
+          <div class="transformation-timeline">
+            <h3>数字化转型路径</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-phase">第一阶段：基础建设</div>
+                <div class="timeline-desc">完善信息化基础设施，建立数据标准，培养数字化意识</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-phase">第二阶段：系统集成</div>
+                <div class="timeline-desc">打通各业务系统，实现数据互联互通，提升运营效率</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-phase">第三阶段：智能应用</div>
+                <div class="timeline-desc">引入AI、大数据等先进技术，实现智能化决策和自动化运营</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-phase">第四阶段：生态协同</div>
+                <div class="timeline-desc">构建数字化生态，实现内外部协同，持续创新和价值创造</div>
+              </div>
             </div>
           </div>
         </div>
