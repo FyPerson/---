@@ -34,6 +34,42 @@
       }
     });
   });
+
+  // 初始化未来规划彩蛋模块
+  const futurePlanningSection = document.querySelector('.future-planning');
+  if (futurePlanningSection) {
+    // 添加键盘事件监听器
+    document.addEventListener('keydown', function(e) {
+      // 按F键显示未来规划
+      if (e.key === 'f' || e.key === 'F') {
+        if (futurePlanningSection.style.display === 'none') {
+          futurePlanningSection.style.display = 'block';
+          futurePlanningSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      // 按Escape键隐藏未来规划
+      if (e.key === 'Escape') {
+        futurePlanningSection.style.display = 'none';
+      }
+    });
+    
+    // 添加点击事件监听器（双击页面任意位置显示未来规划）
+    let clickCount = 0;
+    document.addEventListener('click', function(e) {
+      clickCount++;
+      setTimeout(() => {
+        if (clickCount === 2) {
+          if (futurePlanningSection.style.display === 'none') {
+            futurePlanningSection.style.display = 'block';
+            futurePlanningSection.scrollIntoView({ behavior: 'smooth' });
+          }
+          clickCount = 0;
+        } else if (clickCount > 2) {
+          clickCount = 0;
+        }
+      }, 300);
+    });
+  }
 })();
 
 
